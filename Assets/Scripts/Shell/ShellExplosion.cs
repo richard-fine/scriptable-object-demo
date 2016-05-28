@@ -5,6 +5,7 @@ public class ShellExplosion : MonoBehaviour
     public LayerMask m_TankMask;                        // Used to filter what the explosion affects, this should be set to "Players".
     public ParticleSystem m_ExplosionParticles;         // Reference to the particles that will play on explosion.
     public AudioSource m_ExplosionAudio;                // Reference to the audio that will play on explosion.
+	public AudioEvent m_ExplosionAudioEvent;
     public float m_MaxDamage = 100f;                    // The amount of damage done if the explosion is centred on a tank.
     public float m_ExplosionForce = 1000f;              // The amount of force added to a tank at the centre of the explosion.
     public float m_MaxLifeTime = 2f;                    // The time in seconds before the shell is removed.
@@ -57,13 +58,18 @@ public class ShellExplosion : MonoBehaviour
         m_ExplosionParticles.Play();
 
         // Play the explosion sound effect.
-        m_ExplosionAudio.Play();
+	    m_ExplosionAudioEvent.Play(m_ExplosionAudio);
 
         // Once the particles have finished, destroy the gameobject they are on.
         Destroy (m_ExplosionParticles.gameObject, m_ExplosionParticles.duration);
 
+	    GetComponent<Renderer>().enabled = false;
+	    GetComponent<Collider>().enabled = false;
+	    GetComponent<Light>().enabled = false;
+	    GetComponent<Rigidbody>().isKinematic = true;
+
         // Destroy the shell.
-        Destroy (gameObject);
+	    Destroy (gameObject, m_ExplosionAudio.clip.length/m_ExplosionAudio.pitch);
     }
 
 

@@ -302,6 +302,8 @@ MonoBehaviour:
     m_Bits: 512
   m_ExplosionParticles: {fileID: 19870274}
   m_ExplosionAudio: {fileID: 8204558}
+  m_ExplosionAudioEvent: {fileID: 11400000, guid: b03f6f32999c9d048a62df8ede45f52f,
+    type: 2}
   m_MaxDamage: 100
   m_ExplosionForce: 1000
   m_MaxLifeTime: 2
