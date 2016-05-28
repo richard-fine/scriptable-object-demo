@@ -306,7 +306,7 @@ MonoBehaviour:
     type: 2}
   m_MaxDamage: 100
   m_ExplosionForce: 1000
-  m_MaxLifeTime: 2
+  m_MaxLifeTime: 10
   m_ExplosionRadius: 5
 --- !u!136 &13693818
 CapsuleCollider:
