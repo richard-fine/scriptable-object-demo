@@ -1,0 +1,8 @@
+syntax: glob
+Library/*
+Temp/*
+*.suo
+*.sdf
+*.sln
+*.csproj
+*.opendb
