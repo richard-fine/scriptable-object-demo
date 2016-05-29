@@ -19,10 +19,10 @@ public class ShellExplosion : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter (Collider other)
+    private void OnCollisionEnter (Collision collision)
     {
 		// Collect all the colliders in a sphere from the shell's current position to a radius of the explosion radius.
-        Collider[] colliders = Physics.OverlapSphere (transform.position, m_ExplosionRadius, m_TankMask);
+        Collider[] colliders = Physics.OverlapSphere (transform.position, m_ExplosionRadius);
 
         // Go through all the colliders...
         for (int i = 0; i < colliders.Length; i++)
@@ -30,25 +30,16 @@ public class ShellExplosion : MonoBehaviour
             // ... and find their rigidbody.
             Rigidbody targetRigidbody = colliders[i].GetComponent<Rigidbody> ();
 
-            // If they don't have a rigidbody, go on to the next collider.
-            if (!targetRigidbody)
-                continue;
+	        if (targetRigidbody)
+	        {
+		        // Add an explosion force.
+		        targetRigidbody.AddExplosionForce(m_ExplosionForce, transform.position, m_ExplosionRadius);
+	        }
 
-            // Add an explosion force.
-            targetRigidbody.AddExplosionForce (m_ExplosionForce, transform.position, m_ExplosionRadius);
+	        // Calculate the amount of damage the target should take based on it's distance from the shell.
+			float damage = CalculateDamage(colliders[i].transform.position);
 
-            // Find the TankHealth script associated with the rigidbody.
-            TankHealth targetHealth = targetRigidbody.GetComponent<TankHealth> ();
-
-            // If there is no TankHealth script attached to the gameobject, go on to the next collider.
-            if (!targetHealth)
-                continue;
-
-            // Calculate the amount of damage the target should take based on it's distance from the shell.
-            float damage = CalculateDamage (targetRigidbody.position);
-
-            // Deal this damage to the tank.
-            targetHealth.TakeDamage (damage);
+			colliders[i].SendMessage("TakeDamage", damage, SendMessageOptions.DontRequireReceiver);
         }
 
         // Unparent the particles from the shell.
