@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e23780ae3951ab46bc93f2f7eced5c5, type: 3}
+  m_Name: Sniper
+  m_EditorClassIdentifier: 
+  aimAngleThreshold: 3
+  chargeTimePerDistance:
+    minValue: 0.015099555
+    maxValue: 0.032258116
+  timeBetweenShots:
+    minValue: 2.0487304
+    maxValue: 4.577901
