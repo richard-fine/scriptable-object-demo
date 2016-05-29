@@ -6402,7 +6402,7 @@ MonoBehaviour:
   m_EndDelay: 3
   m_CameraControl: {fileID: 1771596988}
   m_MessageText: {fileID: 102963701}
-  m_TankPrefab: {fileID: 173472, guid: 756d3a6506f2f8241b4e8badde68567a, type: 2}
+  m_TankPrefab: {fileID: 114000011236013548, guid: 756d3a6506f2f8241b4e8badde68567a, type: 2}
   m_Tanks:
   - m_PlayerColor: {r: 0.16470589, g: 0.39215687, b: 0.69803923, a: 0}
     m_SpawnPoint: {fileID: 194018016}
