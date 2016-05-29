@@ -6434,12 +6434,14 @@ MonoBehaviour:
   m_Tanks:
   - m_PlayerColor: {r: 0.16470589, g: 0.39215687, b: 0.69803923, a: 0}
     m_SpawnPoint: {fileID: 194018016}
+    m_Brain: {fileID: 11400000, guid: 09a07f73273ad2147b585832964637e0, type: 2}
     m_PlayerNumber: 1
     m_ColoredPlayerText: 
     m_Instance: {fileID: 0}
     m_Wins: 0
   - m_PlayerColor: {r: 0.8980392, g: 0.18039216, b: 0.15686275, a: 0}
     m_SpawnPoint: {fileID: 2083660209}
+    m_Brain: {fileID: 11400000, guid: 057f6d79db16e63438b78261deb53bf6, type: 2}
     m_PlayerNumber: 2
     m_ColoredPlayerText: 
     m_Instance: {fileID: 0}
