@@ -10156,7 +10156,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: 100
   DamagePerTankCollision: 40
-  DestructionSequence: {fileID: 0}
+  DestructionSequence: {fileID: 11400000, guid: 80a9c65bde1b54d45a7830a6de27ea97,
+    type: 2}
 --- !u!114 &114000010063022048
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10170,7 +10171,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: 100
   DamagePerTankCollision: 40
-  DestructionSequence: {fileID: 0}
+  DestructionSequence: {fileID: 11400000, guid: 069e42e91660c3d4ea4c0c5664230b11,
+    type: 2}
 --- !u!114 &114000010664991992
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10184,7 +10186,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: 100
   DamagePerTankCollision: 40
-  DestructionSequence: {fileID: 0}
+  DestructionSequence: {fileID: 11400000, guid: df57e704a31eb874da643b01d1447aea,
+    type: 2}
 --- !u!114 &114000011664789620
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10198,7 +10201,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: 100
   DamagePerTankCollision: 40
-  DestructionSequence: {fileID: 0}
+  DestructionSequence: {fileID: 11400000, guid: 9799043fc541d6e4cba68c068c04f45b,
+    type: 2}
 --- !u!114 &114000011674505168
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10212,7 +10216,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: 100
   DamagePerTankCollision: 40
-  DestructionSequence: {fileID: 0}
+  DestructionSequence: {fileID: 11400000, guid: 069e42e91660c3d4ea4c0c5664230b11,
+    type: 2}
 --- !u!114 &114000011691931318
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10226,7 +10231,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: 100
   DamagePerTankCollision: 40
-  DestructionSequence: {fileID: 0}
+  DestructionSequence: {fileID: 11400000, guid: 9799043fc541d6e4cba68c068c04f45b,
+    type: 2}
 --- !u!114 &114000012379983140
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10240,7 +10246,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: 100
   DamagePerTankCollision: 40
-  DestructionSequence: {fileID: 0}
+  DestructionSequence: {fileID: 11400000, guid: 9799043fc541d6e4cba68c068c04f45b,
+    type: 2}
 --- !u!114 &114000012864476616
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10254,7 +10261,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: 100
   DamagePerTankCollision: 40
-  DestructionSequence: {fileID: 0}
+  DestructionSequence: {fileID: 11400000, guid: c0c071f314dcd8f4fbdc943c68625eed,
+    type: 2}
 --- !u!114 &114000013309909884
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10268,7 +10276,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: 100
   DamagePerTankCollision: 40
-  DestructionSequence: {fileID: 0}
+  DestructionSequence: {fileID: 11400000, guid: 9799043fc541d6e4cba68c068c04f45b,
+    type: 2}
 --- !u!114 &114000013368970856
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10282,7 +10291,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: 100
   DamagePerTankCollision: 40
-  DestructionSequence: {fileID: 0}
+  DestructionSequence: {fileID: 11400000, guid: 80a9c65bde1b54d45a7830a6de27ea97,
+    type: 2}
 --- !u!114 &114000013902085490
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10296,4 +10306,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: 100
   DamagePerTankCollision: 40
-  DestructionSequence: {fileID: 0}
+  DestructionSequence: {fileID: 11400000, guid: 80a9c65bde1b54d45a7830a6de27ea97,
+    type: 2}
