@@ -28,7 +28,6 @@ public class GameState : ScriptableObject
 	public class PlayerState
 	{
 		public TankThinker Tank;
-		public int TotalKills;
 		public int TotalWins;
 		[NonSerialized] public GameSettings.PlayerInfo PlayerInfo;
 

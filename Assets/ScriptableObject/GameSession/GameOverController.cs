@@ -32,8 +32,8 @@ public class GameOverController : MonoBehaviour
 		var sb = new StringBuilder();
 		foreach (var player in GameState.Instance.players.OrderByDescending(p => p.TotalWins))
 		{
-			sb.AppendFormat("<color=#{0}>{1} {2} kills {3} wins</color>\n", ColorUtility.ToHtmlStringRGBA(player.PlayerInfo.Color),
-				player.PlayerInfo.Name, player.TotalKills, player.TotalWins);
+			sb.AppendFormat("<color=#{0}>{1} {2} wins</color>\n", ColorUtility.ToHtmlStringRGBA(player.PlayerInfo.Color),
+				player.PlayerInfo.Name, player.TotalWins);
 		}
 		scores.text = sb.ToString();
 	}
