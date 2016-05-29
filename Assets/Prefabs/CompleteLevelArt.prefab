@@ -387,12 +387,13 @@ GameObject:
   - 65: {fileID: 6568188}
   - 65: {fileID: 6528078}
   - 65: {fileID: 6572526}
+  - 114: {fileID: 114000013309909884}
   m_Layer: 0
   m_Name: Building01 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &117694
 GameObject:
@@ -493,12 +494,13 @@ GameObject:
   - 65: {fileID: 6551802}
   - 65: {fileID: 6500506}
   - 65: {fileID: 6535744}
+  - 114: {fileID: 114000011691931318}
   m_Layer: 0
   m_Name: Building01 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &121758
 GameObject:
@@ -690,12 +692,13 @@ GameObject:
   - 95: {fileID: 9586830}
   - 136: {fileID: 13636670}
   - 65: {fileID: 6529174}
+  - 114: {fileID: 114000010051699878}
   m_Layer: 0
   m_Name: Building02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &129450
 GameObject:
@@ -934,12 +937,13 @@ GameObject:
   - 95: {fileID: 9501608}
   - 136: {fileID: 13651984}
   - 65: {fileID: 6513952}
+  - 114: {fileID: 114000013368970856}
   m_Layer: 0
   m_Name: Building02 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &143318
 GameObject:
@@ -972,12 +976,13 @@ GameObject:
   - 95: {fileID: 9555084}
   - 136: {fileID: 13615076}
   - 65: {fileID: 6524904}
+  - 114: {fileID: 114000013902085490}
   m_Layer: 0
   m_Name: Building02 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &144670
 GameObject:
@@ -1060,12 +1065,13 @@ GameObject:
   - 65: {fileID: 6581614}
   - 65: {fileID: 6531562}
   - 65: {fileID: 6548018}
+  - 114: {fileID: 114000010063022048}
   m_Layer: 0
   m_Name: Building01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &147168
 GameObject:
@@ -1585,12 +1591,13 @@ GameObject:
   - 23: {fileID: 2345250}
   - 95: {fileID: 9526896}
   - 136: {fileID: 13638260}
+  - 114: {fileID: 114000012379983140}
   m_Layer: 0
   m_Name: OilStorage (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &167552
 GameObject:
@@ -1715,12 +1722,13 @@ GameObject:
   - 65: {fileID: 6593470}
   - 65: {fileID: 6575428}
   - 65: {fileID: 6549066}
+  - 114: {fileID: 114000012864476616}
   m_Layer: 0
   m_Name: Refinery
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &173360
 GameObject:
@@ -1819,12 +1827,13 @@ GameObject:
   - 23: {fileID: 2379240}
   - 95: {fileID: 9579856}
   - 136: {fileID: 13655406}
+  - 114: {fileID: 114000011664789620}
   m_Layer: 0
   m_Name: OilStorage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &180346
 GameObject:
@@ -2032,12 +2041,13 @@ GameObject:
   - 65: {fileID: 6574304}
   - 65: {fileID: 6590876}
   - 65: {fileID: 6546124}
+  - 114: {fileID: 114000011674505168}
   m_Layer: 0
   m_Name: Building01 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &188090
 GameObject:
@@ -2152,12 +2162,13 @@ GameObject:
   - 33: {fileID: 3325866}
   - 23: {fileID: 2308472}
   - 136: {fileID: 13645844}
+  - 114: {fileID: 114000010664991992}
   m_Layer: 0
   m_Name: Radar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &196192
 GameObject:
@@ -10132,3 +10143,157 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 171356}
   m_IsPrefabParent: 1
+--- !u!114 &114000010051699878
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 129414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec03d032d1509ba46bfd5b7491dfe570, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 100
+  DamagePerTankCollision: 40
+  DestructionSequence: {fileID: 0}
+--- !u!114 &114000010063022048
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 146860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec03d032d1509ba46bfd5b7491dfe570, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 100
+  DamagePerTankCollision: 40
+  DestructionSequence: {fileID: 0}
+--- !u!114 &114000010664991992
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 195192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec03d032d1509ba46bfd5b7491dfe570, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 100
+  DamagePerTankCollision: 40
+  DestructionSequence: {fileID: 0}
+--- !u!114 &114000011664789620
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 180058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec03d032d1509ba46bfd5b7491dfe570, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 100
+  DamagePerTankCollision: 40
+  DestructionSequence: {fileID: 0}
+--- !u!114 &114000011674505168
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 187520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec03d032d1509ba46bfd5b7491dfe570, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 100
+  DamagePerTankCollision: 40
+  DestructionSequence: {fileID: 0}
+--- !u!114 &114000011691931318
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 121638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec03d032d1509ba46bfd5b7491dfe570, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 100
+  DamagePerTankCollision: 40
+  DestructionSequence: {fileID: 0}
+--- !u!114 &114000012379983140
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec03d032d1509ba46bfd5b7491dfe570, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 100
+  DamagePerTankCollision: 40
+  DestructionSequence: {fileID: 0}
+--- !u!114 &114000012864476616
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 173254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec03d032d1509ba46bfd5b7491dfe570, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 100
+  DamagePerTankCollision: 40
+  DestructionSequence: {fileID: 0}
+--- !u!114 &114000013309909884
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 117692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec03d032d1509ba46bfd5b7491dfe570, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 100
+  DamagePerTankCollision: 40
+  DestructionSequence: {fileID: 0}
+--- !u!114 &114000013368970856
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 137666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec03d032d1509ba46bfd5b7491dfe570, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 100
+  DamagePerTankCollision: 40
+  DestructionSequence: {fileID: 0}
+--- !u!114 &114000013902085490
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 143522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec03d032d1509ba46bfd5b7491dfe570, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Health: 100
+  DamagePerTankCollision: 40
+  DestructionSequence: {fileID: 0}
