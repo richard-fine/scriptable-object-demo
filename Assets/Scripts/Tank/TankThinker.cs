@@ -7,7 +7,7 @@ public class TankThinker : MonoBehaviour
 	public TankBrain brain;
 
 	private Dictionary<string, object> memory;
-	[NonSerialized] public GameState.PlayerState player;
+	[NonSerialized] public TankManager player;
 
 	public T Remember<T>(string key)
 	{
@@ -44,16 +44,16 @@ public class TankThinker : MonoBehaviour
 		brain.Think(this);
 	}
 
-	public void Setup(GameState.PlayerState playerState, Transform spawnPoint)
+	public void Setup(TankManager playerInfo, Transform spawnPoint)
 	{
 		transform.position = spawnPoint.position;
 		transform.rotation = spawnPoint.rotation;
 
-		brain = playerState.PlayerInfo.Brain;
-		SetColor(playerState.PlayerInfo.Color);
+		brain = playerInfo.m_Brain;
+		SetColor(playerInfo.m_PlayerColor);
 
-		player = playerState;
-		playerState.Tank = this;
+		player = playerInfo;
+		playerInfo.m_Instance = gameObject;
 
 		enabled = true;
 	}

@@ -16,7 +16,7 @@ public class TankManager
     [HideInInspector] public string m_ColoredPlayerText;    // A string that represents the player with their number colored to match their tank.
     [HideInInspector] public GameObject m_Instance;         // A reference to the instance of the tank when it is created.
     [HideInInspector] public int m_Wins;                    // The number of wins this player has so far.
-
+	public Transform m_SpawnPoint;
 
 	private TankThinker m_Thinker;
     private GameObject m_CanvasGameObject;                  // Used to disable the world space UI during the Starting and Ending phases of each round.
