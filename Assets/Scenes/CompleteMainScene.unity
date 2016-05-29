@@ -6418,6 +6418,18 @@ MonoBehaviour:
     m_ColoredPlayerText: 
     m_Instance: {fileID: 0}
     m_Wins: 0
+  SpawnPoints:
+    - {fileID: 1976308491}
+    - {fileID: 203089421}
+    - {fileID: 88947423}
+    - {fileID: 1068209282}
+    - {fileID: 1425390415}
+    - {fileID: 1200216810}
+    - {fileID: 707927504}
+    - {fileID: 2004064450}
+    - {fileID: 2136835665}
+    - {fileID: 1618060517}
+    - {fileID: 1088663544}
 --- !u!4 &1304999366
 Transform:
   m_ObjectHideFlags: 0
