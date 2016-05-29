@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d13d04d3bef146e46bd93805f17ace7c, type: 3}
+  m_Name: Big building
+  m_EditorClassIdentifier: 
+  CollapseTime: 2
+  MovementScale: 0.3
+  MoveInsteadOfScale: 0
+  DustParticles: {fileID: 198000010699192352, guid: cd9031aff80fee74fa44fd0d9bd67619,
+    type: 2}
+  DustSurroundFactor: 1.1
+  CollapseAudio: {fileID: 11400000, guid: d52583a86538944458b3ac0d52da1420, type: 2}
+  CollapseAudioGroup: {fileID: 0}
+  CameraShakeStrength: 0.5
