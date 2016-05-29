@@ -230,6 +230,7 @@ GameObject:
   - 114: {fileID: 11443146}
   - 114: {fileID: 11409376}
   - 114: {fileID: 11488788}
+  - 114: {fileID: 114000011236013548}
   m_Layer: 9
   m_Name: CompleteTank
   m_TagString: Player
@@ -871,7 +872,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e4cc0827b572b5408b2cd8eb8b456b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_PlayerNumber: 1
   m_Speed: 12
   m_TurnSpeed: 180
   m_MovementAudio: {fileID: 8261418}
@@ -1007,7 +1007,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 184d72ea2424d1443bca885930fe844a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_PlayerNumber: 1
   m_Shell: {fileID: 5409530, guid: 008ecb1b70bec724fa2cd34255b0d8f8, type: 2}
   m_FireTransform: {fileID: 435794}
   m_AimSlider: {fileID: 11407922}
@@ -4802,3 +4801,15 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 173472}
   m_IsPrefabParent: 1
+--- !u!114 &114000011236013548
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 173472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ceeb94521d436642bd6c0a08db9dfa8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  brain: {fileID: 0}
