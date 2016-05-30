@@ -14,8 +14,16 @@ public class MainMenuController : MonoBehaviour
 	public GameObject PlayersPanel;
 	public GameObject SettingsPanel;
 
+	public string SavedSettingsPath {
+		get {
+			return System.IO.Path.Combine(Application.persistentDataPath, "tanks-settings.json");
+		}
+	}
+
 	void Start () {
-		if (!GameSettings.Instance)
+		if (System.IO.File.Exists(SavedSettingsPath))
+			GameSettings.LoadFromJSON(SavedSettingsPath);
+		else
 			GameSettings.InitializeFromDefault(GameSettingsTemplate);
 
 		foreach(var info in GetComponentsInChildren<PlayerInfoController>())
@@ -26,6 +34,7 @@ public class MainMenuController : MonoBehaviour
 
 	public void Play()
 	{
+		GameSettings.Instance.SaveToJSON(SavedSettingsPath);
 		GameState.CreateFromSettings(GameSettings.Instance);
 		SceneManager.LoadScene(1, LoadSceneMode.Single);
 	}

@@ -39,6 +39,19 @@ public class GameSettings : ScriptableObject
 
 	public int NumberOfRounds;
 
+	public static void LoadFromJSON(string path)
+	{
+		if (!_instance) DestroyImmediate(_instance);
+		_instance = ScriptableObject.CreateInstance<GameSettings>();
+		JsonUtility.FromJsonOverwrite(System.IO.File.ReadAllText(path), _instance);
+	}
+
+	public void SaveToJSON(string path)
+	{
+		Debug.LogFormat("Saving game settings to {0}", path);
+		System.IO.File.WriteAllText(path, JsonUtility.ToJson(this, true));
+	}
+
 	public static void InitializeFromDefault(GameSettings settings)
 	{
 		if (_instance) DestroyImmediate(_instance);
