@@ -28,10 +28,10 @@ public class GameSettings : ScriptableObject
 		get
 		{
 			if (!_instance)
-				_instance = FindObjectOfType<GameSettings>();
+				_instance = Resources.FindObjectsOfTypeAll<GameSettings>().FirstOrDefault();
 #if UNITY_EDITOR
 			if (!_instance)
-				_instance = Instantiate(UnityEditor.AssetDatabase.LoadAssetAtPath<GameSettings>("Assets/Test game settings.asset"));
+				InitializeFromDefault(UnityEditor.AssetDatabase.LoadAssetAtPath<GameSettings>("Assets/Test game settings.asset"));
 #endif
 			return _instance;
 		}
@@ -44,6 +44,7 @@ public class GameSettings : ScriptableObject
 		if (!_instance) DestroyImmediate(_instance);
 		_instance = ScriptableObject.CreateInstance<GameSettings>();
 		JsonUtility.FromJsonOverwrite(System.IO.File.ReadAllText(path), _instance);
+		_instance.hideFlags = HideFlags.HideAndDontSave;
 	}
 
 	public void SaveToJSON(string path)
@@ -56,6 +57,7 @@ public class GameSettings : ScriptableObject
 	{
 		if (_instance) DestroyImmediate(_instance);
 		_instance = Instantiate(settings);
+		_instance.hideFlags = HideFlags.HideAndDontSave;
 	}
 
 #if UNITY_EDITOR

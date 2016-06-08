@@ -13,7 +13,7 @@ public class GameState : ScriptableObject
 	{
 		get
 		{
-			if (!_instance) _instance = FindObjectOfType<GameState>();
+			if (!_instance) _instance = Resources.FindObjectsOfTypeAll<GameState>().FirstOrDefault();
 
 #if UNITY_EDITOR
 			if (!_instance)
@@ -43,6 +43,7 @@ public class GameState : ScriptableObject
 		Assert.IsNotNull(settings);
 
 		_instance = CreateInstance<GameState>();
+		_instance.hideFlags = HideFlags.HideAndDontSave;
 
 		_instance.players = new List<PlayerState>();
 		foreach (var playerInfo in settings.players)
