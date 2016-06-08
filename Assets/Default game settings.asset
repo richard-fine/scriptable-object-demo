@@ -14,20 +14,20 @@ MonoBehaviour:
   players:
   - Name: Player One
     Color: {r: 0, g: 0, b: 1, a: 1}
-    Brain: {fileID: 11400000, guid: 09a07f73273ad2147b585832964637e0, type: 2}
+    BrainName: Human 1
   - Name: Player Two
     Color: {r: 0, g: 1, b: 0, a: 1}
-    Brain: {fileID: 11400000, guid: 057f6d79db16e63438b78261deb53bf6, type: 2}
+    BrainName: Human 2
   - Name: Player Three
     Color: {r: 1, g: 0, b: 0, a: 1}
-    Brain: {fileID: 0}
+    BrainName: Sniper
   - Name: Player Four
     Color: {r: 1, g: 1, b: 0, a: 1}
-    Brain: {fileID: 0}
+    BrainName: Idiot
   - Name: Player Five
     Color: {r: 0, g: 1, b: 1, a: 1}
-    Brain: {fileID: 0}
+    BrainName: 
   - Name: Player Six
     Color: {r: 1, g: 0, b: 1, a: 1}
-    Brain: {fileID: 0}
+    BrainName: 
   NumberOfRounds: 5

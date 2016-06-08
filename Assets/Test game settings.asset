@@ -14,20 +14,20 @@ MonoBehaviour:
   players:
   - Name: White
     Color: {r: 1, g: 1, b: 1, a: 1}
-    Brain: {fileID: 11400000, guid: 09a07f73273ad2147b585832964637e0, type: 2}
+    BrainName: Human 1
   - Name: Black
     Color: {r: 0, g: 0, b: 0, a: 1}
-    Brain: {fileID: 11400000, guid: 6d4b0e45243ad0749b1c1611ef595b6e, type: 2}
+    BrainName: Human 2
   - Name: 
     Color: {r: 0, g: 0, b: 0, a: 1}
-    Brain: {fileID: 0}
+    BrainName: 
   - Name: 
     Color: {r: 0, g: 0, b: 0, a: 1}
-    Brain: {fileID: 0}
+    BrainName: 
   - Name: 
     Color: {r: 0, g: 0, b: 0, a: 1}
-    Brain: {fileID: 0}
+    BrainName: 
   - Name: 
     Color: {r: 0, g: 0, b: 0, a: 1}
-    Brain: {fileID: 0}
+    BrainName: 
   NumberOfRounds: 1

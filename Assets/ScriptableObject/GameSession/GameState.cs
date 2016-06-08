@@ -13,10 +13,11 @@ public class GameState : ScriptableObject
 	{
 		get
 		{
-			if (!_instance) _instance = Resources.FindObjectsOfTypeAll<GameState>().FirstOrDefault();
+			if (!_instance) 
+				_instance = Resources.FindObjectsOfTypeAll<GameState>().FirstOrDefault();
 
 #if UNITY_EDITOR
-			if (!_instance)
+			if (!_instance || _instance.players.Count == 0)
 				CreateFromSettings(GameSettings.Instance);
 #endif
 

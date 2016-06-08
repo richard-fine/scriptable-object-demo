@@ -12,7 +12,44 @@ public class GameSettings : ScriptableObject
 	{
 		public string Name;
 		public Color Color;
-		public TankBrain Brain;
+
+		// Serializing an object reference directly to JSON doesn't do what we want - we just get an InstanceID
+		// which is not stable between sessions. So instead we serialize the string name of the object, and
+		// look it back up again after deserialization
+		private TankBrain _cachedBrain;
+		public TankBrain Brain
+		{
+			get
+			{
+				if (!_cachedBrain && !String.IsNullOrEmpty(BrainName))
+				{
+					TankBrain[] availableBrains;
+
+					#if UNITY_EDITOR
+					// When working in the Editor and launching the game directly from the play scenes, rather than the
+					// main menu, the brains may not be loaded and so Resources.FindObjectsOfTypeAll will not find them.
+					// Instead, use the AssetDatabase to find them. At runtime, all available brains get loaded by the
+					// MainMenuController so it's not a problem outside the editor.
+					availableBrains = UnityEditor.AssetDatabase.FindAssets("t:TankBrain")
+									.Select(guid => UnityEditor.AssetDatabase.GUIDToAssetPath(guid))
+									.Select(path => UnityEditor.AssetDatabase.LoadAssetAtPath<TankBrain>(path))
+									.Where(b => b).ToArray();
+					#else
+					availableBrains = Resources.FindObjectsOfTypeAll<TankBrain>();
+					#endif
+
+					_cachedBrain = availableBrains.FirstOrDefault(b => b.name == BrainName);
+				}
+				return _cachedBrain;
+			}
+			set
+			{
+				_cachedBrain = value;
+				BrainName = value ? value.name : String.Empty;
+			}
+		}
+
+		[SerializeField] private string BrainName;
 
 		public string GetColoredName()
 		{
